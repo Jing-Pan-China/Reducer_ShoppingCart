@@ -11,12 +11,11 @@ export const addToCart = (item) => {
 };
 
 // 从购物车中移除商品的动作创建器
-export const removeFromCart = (itemId) => {
+export const removeFromCart = (item) => {
   return {
     type: "REMOVE_FROM_CART",
     payload: {
-      itemId
-
+      item
     }
   };
 };
