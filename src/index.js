@@ -10,8 +10,9 @@ import cartReducer from './reducer/cartReducer';
 
 const store = configureStore({
   reducer: {
-    cart: cartReducer, 
-}});
+    cart: cartReducer,
+  }
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
